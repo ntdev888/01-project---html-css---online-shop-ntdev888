@@ -3,6 +3,16 @@ body {
     background-image: url("./images/monstearTileOPC.png");
     background-repeat: repeat;
     height: 100%;
+    display: grid;
+}
+
+footer {
+    margin: auto;
+    padding: 1rem;
+    width: max-content;
+    height: auto;
+    background-color: #2f4d49;
+    border-radius: 0.5rem;
 }
 
 div.navbar {
@@ -35,7 +45,7 @@ button:hover {
     background-color: #2f4d49 ;
 }
 
-.product-card {
+.product-cards {
     display: grid;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -49,9 +59,10 @@ button:hover {
 
 .card-text {
     margin-left: 1rem;
+    margin-right: 0.5rem;
 }
 
-.string-of-dolphins {
+.product {
     justify-self: center;
     width: 80%;
     margin-top: 0.5rem;
