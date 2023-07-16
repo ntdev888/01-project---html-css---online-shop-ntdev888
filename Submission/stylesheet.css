@@ -1,0 +1,62 @@
+body {
+    background-color: #FEFFFE;
+    background-image: url("./images/monstearTileOPC.png");
+    background-repeat: repeat;
+    height: 100%;
+}
+
+div.navbar {
+    display: grid;
+    align-content: center;
+}
+
+.logo {
+    justify-self: center;
+    max-width: 15rem;
+    height: auto;
+}
+
+img {
+    border-radius: 0.5rem;
+}
+
+button {
+    justify-self: center;
+    border: none;
+    border-radius: 0.5rem;
+    margin: 0.2rem;
+    width: 8rem;
+    padding: 1.5rem;
+    background-color: #3F6660;
+    color: white
+}
+
+button:hover {
+    background-color: #2f4d49 ;
+}
+
+.product-card {
+    display: grid;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.product-img {
+    justify-self: center;
+    max-width: auto;
+    height: auto;
+}
+
+.card-text {
+    margin-left: 1rem;
+}
+
+.string-of-dolphins {
+    justify-self: center;
+    width: 80%;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    background-color: #FEFFFE;
+    box-shadow: 5px 5px 3px grey;
+    border-radius: 0.5rem;
+}
