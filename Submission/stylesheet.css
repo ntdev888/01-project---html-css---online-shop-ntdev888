@@ -1,18 +1,22 @@
 body {
-    background-color: #FEFFFE;
+    /*background-color: #FEFFFE;
     background-image: url("./images/monstearTileOPC.png");
-    background-repeat: repeat;
+    background-repeat: repeat;*/
+    background-color: #3F6660;
     height: 100%;
     display: grid;
 }
 
 footer {
     margin: auto;
-    padding: 1rem;
+    padding: 0.8rem;
     width: max-content;
     height: auto;
-    background-color: #2f4d49;
     border-radius: 0.5rem;
+}
+
+.icons {
+    padding-left: 0.6rem;
 }
 
 div.navbar {
@@ -26,12 +30,17 @@ div.navbar {
     height: auto;
 }
 
+.navbuttons {
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 img {
     border-radius: 0.5rem;
 }
 
 button {
-    justify-self: center;
     border: none;
     border-radius: 0.5rem;
     margin: 0.2rem;
@@ -39,6 +48,20 @@ button {
     padding: 1.5rem;
     background-color: #3F6660;
     color: white
+}
+
+.buy-button {
+    justify-content: center;
+    width: 100%;
+    display: grid;
+}
+
+button.buynow {
+    display: grid;
+    align-self: center;
+    padding: 0.2rem;
+    width: 6rem;
+    margin-bottom: 1rem;
 }
 
 button:hover {
@@ -52,7 +75,6 @@ button:hover {
 }
 
 .product-img {
-    justify-self: center;
     max-width: auto;
     height: auto;
 }
@@ -63,11 +85,95 @@ button:hover {
 }
 
 .product {
+    display: grid;
     justify-self: center;
     width: 80%;
     margin-top: 0.5rem;
     margin-bottom: 1rem;
     background-color: #FEFFFE;
-    box-shadow: 5px 5px 3px grey;
+    box-shadow: 5px 5px 3px rgb(32, 53, 33);
     border-radius: 0.5rem;
+}
+
+.product-area {
+    margin-bottom: 3rem;
+    background-color:#FEFFFE;
+    display: grid;
+    width: 90%;
+    justify-self: center;
+    border-radius: 1rem;
+}
+
+.product-text {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media  screen and (min-width: 750px) {
+    button {
+        font-size: 1.2rem;
+    }
+
+    .navbar {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .navbuttons {
+        font-size: 40px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .product {
+        width: 90%;
+    }
+
+    .product-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .product-area {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .buy-button {
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    button {
+        font-size: 1.5rem;
+    }
+
+    button.buynow {
+        width: 10rem;
+    }
+
+    .logo {
+        justify-self: start;
+        padding-left: 4rem;
+    }
+
+    .product-cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .navbuttons {
+        padding-right: 4rem;
+        align-items: center;
+        justify-self: end;
+    }
+
+    .btn {
+        font-size: 1.5rem;
+        height: 5rem;
+    }
+
+    .product-area {
+        grid-template-columns: 1fr 3fr;
+    }
+
+    .product-text {
+        font-size: 1.5rem;
+    }
 }
