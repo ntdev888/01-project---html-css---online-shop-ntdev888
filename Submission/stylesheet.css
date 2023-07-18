@@ -228,4 +228,8 @@ button:hover {
     .contact {
         font-size: 2rem;
     }
+
+    input {
+        height: 2rem;
+    }
 }
