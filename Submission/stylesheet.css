@@ -16,6 +16,7 @@ footer {
 }
 
 a {
+    text-decoration: none;
     display: grid;
     height: fit-content;
 }
